@@ -1,0 +1,14 @@
+BootStrap: localimage
+From: transformers-pytorch-gpu_latest.sif
+# singularity pull docker://huggingface/transformers-pytorch-gpu
+
+%post
+    pip install --upgrade pip
+    pip install gymnasium
+    pip install swig
+    pip install gymnasium[classic-control]
+    pip install gymnasium[box2d]
+    pip install gymnasium[atari]
+    pip install gymnasium[accept-rom-license]
+    pip install gymnasium[other]
+    pip install imageio

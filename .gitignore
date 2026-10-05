@@ -1,0 +1,4 @@
+outputs/*.pth
+slurm_logs/*
+*.sif
+python/__pycache__
